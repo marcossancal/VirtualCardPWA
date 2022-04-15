@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html> 
+    <head> 
+        <meta charset="utf-8"> <link rel="shortcut icon" href="img/icone.png" type="image/x-icon"> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap" rel="stylesheet"> 
+        <link rel="manifest" href="manifest.json"> <meta name="theme-color" content="#18316e"> 
+        <link rel="apple-touch-icon" href="img/icone.png"> 
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover"> 
+        <meta name="color-scheme" content="light"> <link rel="stylesheet" href="css/index.css"> 
+        <script>
+        window.onload=()=>{if ("serviceWorker" in navigator){navigator.serviceWorker.register("serviceworker.js");}}; 
+        </script> 
+        <title>Contato Taxation Mind</title> 
+    </head> 
+    <body class="bg"> 
+        <div class="container"> 
+            <div class="logo"> 
+                <a href="">
+                    <img src="img/logo.png" alt="">
+                </a> 
+                <br>
+                <br>
+            </div>
+            <div class="img"> 
+                <img src="img/marcos.sanches.jpg" alt=""> 
+            </div>
+            <div class="info"> 
+                <h2 class="name">
+                    Marcos <strong>Sanches</strong>
+                </h2> 
+                <span>
+                    FOUNDER/CEO
+                </span> 
+            </div>
+            <div class="qrcode"> 
+                <img src="img/qr-code.png" alt=""> 
+            </div>
+            <div class="contact"> 
+                <p><a style="color:white;text-decoration: none;" href="https://api.whatsapp.com/send?phone=5511952983633&text=Oi, tudo bem?">+55 11 952983633</a></p>
+                <p><a style="color:white;text-decoration: none;" href="mailto:marcos.sanches@sancalproducoes.com.br">marcos.sanches@sancalproducoes.com.br</a></p>
+                <p class="fs-12"> Rua Buenos Aires, 93<br/> Jd. Célia, Guarulhos/SP </p>
+            </div>
+        </div>
+        <div class="share">
+            <img src="img/btn.png" alt="">
+        </div>
+        <script>
+            let shareData = {
+                text:"Clique abaixo e veja meu cartão virtual:",
+                url:"https://sancalproducoes.com.br/marcos"
+                };
+            let btn = document.querySelector(".share");
+            btn.addEventListener("click",function(){
+                navigator.share(shareData).then(() =>resultPara.textContent = "MDN shared successfully").catch((e) =>resultPara.textContent = "Error: " + e)
+            });
+        </script>
+    </body>
+</html>

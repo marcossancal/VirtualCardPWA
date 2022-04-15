@@ -1,0 +1,17 @@
+{
+    "short_name": "Cartão Virtual",
+    "name": "Cartão Virtual",
+    "icons": [
+        {
+            "src":"img/icone.png",
+            "sizes": "600x600",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "start_url": ".",
+    "background_color": "#181818",
+    "theme_color": "#181818",
+    "display": "fullscreen",
+    "prefer_related_applications": false
+}
